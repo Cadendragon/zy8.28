@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box">
+		<form action="">
+			用户名:<input type="text" value="" id="userName">
+			年　龄:<input type="text" value="" id="age">
+			<!-- 为了第一个input和第二个对齐年龄中间的空格用全角输入空格 -->
+		</form>
+	</div>
+</body>
+</html>
+<script>
+	var user = prompt("请输入你的用户名")；
+	var age = prompt("请输入你的年龄")；
+	function getUserInfo(a,b){
+		var userName = document.getElementById('userName');
+		var userAge = document.getElementById('age');
+		userName.value = a;
+		userAge.value =b;
+	}
+	getUserInfo(user,age)
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// var box = "123";
+		// 第一种写法输出5
+		var a = 1;
+		var b = 4;
+		function box(){
+			alert(a + b);	
+		}
+		box();
+		//第二种写法输出5
+		var a = 1, b = 4;
+		var box = function (){
+			alert(a + b);
+		}
+		box();
+		// 第一种写法输出14
+		var a = "1";
+		var b = "4";
+		function box(){
+			alert(a + b);
+		}
+		box();
+		// 第二种写法输出14
+		var a = "1",b = "4";
+		var box = function (){
+			alert(a + b);
+		}
+		box();
+	</script>	
+</body>
+</html>
